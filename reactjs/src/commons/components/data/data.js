@@ -28,3 +28,5 @@ const list=[
         desc: "#보디컨디셔너 #장미꽃밭에누은듯"
     }
 ]
+
+export default list;
