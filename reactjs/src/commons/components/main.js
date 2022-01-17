@@ -1,7 +1,7 @@
-function Main(params) {
+function main() {
     return(
         <h1>RUSH</h1>
     )
 }
 
-export default Main;
+export default main;
