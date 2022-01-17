@@ -1,6 +1,8 @@
+import "../../assets/css/menu.css"
+
 const menu=({items})=> {
     return(
-        <div>
+        <div className="list">
             {
                 items.map((menuItem)=>{
                     const {id, title, desc, img, price}=menuItem;
@@ -8,9 +10,8 @@ const menu=({items})=> {
                         <article key={id}>
                             <img src={img}/>
                             <div>
-                            <p>{title}</p>
-                            <p>{desc}</p>
-                            <p>₩{price}</p>
+                                <p>{title}<br/>{desc}</p>
+                                <p>₩{price}</p>
                             </div>
                         </article>
                     )
