@@ -1,4 +1,4 @@
-function main(params) {
+function main() {
     return(
         <h1>RUSH</h1>
     )
