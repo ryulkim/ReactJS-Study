@@ -8,7 +8,7 @@ const menu=({items})=> {
                     const {id, title, desc, img, price}=menuItem;
                     return(
                         <article key={id}>
-                            <img src={img}/>
+                            <img src={img} alt={title}/>
                             <div>
                                 <p>{title}<br/>{desc}</p>
                                 <p>₩{price}</p>

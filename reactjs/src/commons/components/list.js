@@ -1,5 +1,5 @@
 import data from "./data/data.js"
-import Menu from './menu'
+import Menu from './list_menu'
 
 function list() {
     return(
@@ -7,7 +7,6 @@ function list() {
             <h1>list</h1>
             <Menu items={data}/>
         </>
-        
     )
 }
 
