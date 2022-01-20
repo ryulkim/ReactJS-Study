@@ -15,10 +15,8 @@ const menu=({items})=> {
                             </div>
                         </article>
                     )
-                })
-                
-            }
-            
+                })  
+            }  
         </div>
     )
 }
