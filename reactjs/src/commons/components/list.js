@@ -3,7 +3,9 @@ import LMenu from './list_menu'
 import Lcategory from "./list_category.js";
 import {useState} from "react"
 
-const categories=["all",...new Set(data.map((item)=>item.type))];
+const speCategories=[...new Set(data.map((item)=>item.type))];//...: spread operator
+const categories=["all",...speCategories];
+const count=[categories.length,...speCategories.map((item)=>data.reduce((cnt,element)=>cnt+(item===element.type),0))];
 
 function List() {
     const [menuItem, setMenuItem]=useState(data);
@@ -24,7 +26,7 @@ function List() {
     return(
         <>
             <h1>list</h1>
-            <Lcategory category={categories} filterItems={filterItems}/>
+            <Lcategory category={categories} count={count} filterItems={filterItems}/>
             <LMenu items={menuItem}/>
         </>
     )
