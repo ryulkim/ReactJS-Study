@@ -1,4 +1,22 @@
 button{
     background-color: transparent;
     border: 0;
+    padding: 0 16px;
+    font-size: 14px;
+    color: #8f8f8f;
+    font-family: 'Gothic A1',sans-serif;
+    text-align: left;
 }
+
+button:hover{
+    color: #000;
+}
+
+body{
+    background-color: #FFFFFF;
+    
+}
+.category>button:first-child{
+    padding-left: 0px;
+}
+

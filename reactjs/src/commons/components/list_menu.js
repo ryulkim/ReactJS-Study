@@ -2,7 +2,7 @@ import "../../assets/css/list.css"
 
 const menu=({items})=> {
     return(
-        <div className="list">
+        <div className="items">
             {
                 items.map((menuItem)=>{
                     const {id, title, desc, img, price}=menuItem;

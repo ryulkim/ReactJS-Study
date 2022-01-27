@@ -1,9 +1,28 @@
-.list{
+.items{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    padding-left: 2%;
 }
 
 .item{
     margin: 10px;
+}
+
+.list_type{
+    color: #333;
+    width: 100%;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #000;
+    font-size: 28px;
+    line-height: 30px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.list{
+    width: 85vw;
 }
