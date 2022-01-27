@@ -1,6 +1,6 @@
 function main() {
     return(
-        <h1>RUSH</h1>
+        <h1>LUSH</h1>
     )
 }
 

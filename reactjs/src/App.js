@@ -6,7 +6,7 @@ import List from './commons/components/list'
 function App() {
   return (
     <div className="App">
-      <h1>Rush</h1>
+      <h1>LUSH</h1>
       
         <BrowserRouter>
           <div className='menu'>
