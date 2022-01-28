@@ -10,6 +10,26 @@
     text-align: center;
 }
 
+.item_title{
+    line-height: 20px;
+    color: #333;
+    display: block;
+}
+
+.item_desc{
+    color: #8f8f8f;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+
+.item_price{
+    color:#333;
+    font-size: 16px;
+    display: block;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
 .list_type{
     color: #333;
     width: 100%;
