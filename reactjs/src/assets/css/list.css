@@ -11,9 +11,10 @@
 }
 
 .item_title{
-    line-height: 20px;
+    line-height: 22px;
     color: #333;
     display: block;
+    font-size: 16px;
 }
 
 .item_desc{
@@ -28,6 +29,11 @@
     display: block;
     line-height: 30px;
     margin-top: 10px;
+}
+
+.item_state{
+    color: rgb(255, 251, 239);
+    background-color: blue;
 }
 
 .list_type{
