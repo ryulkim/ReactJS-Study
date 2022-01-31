@@ -34,7 +34,16 @@ const list=[
         img: 'https://www.lush.co.kr/data/goods/17/10/23/333/333_main_031.jpg',
         type: "보디 컨디셔너",
         desc: "#보디컨디셔너 #장미꽃밭에누은듯"
-    }
+    },
+    {
+        id: 5,
+        title: "템테이션 100g/250g/500g",
+        price: "17,000",
+        state: ["valentine","new","vegan"],
+        img: 'https://www.lush.co.kr/data/goods/22/01/02/1000002002/1000002002_main_061.png',
+        type: "샤워 젤&젤리",
+        desc: "#발렌타인 #향긋한사과"
+    },
 ]
 
 export default list;
