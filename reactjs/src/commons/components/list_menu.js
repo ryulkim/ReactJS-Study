@@ -1,8 +1,11 @@
 import "../../assets/css/list.css"
+
 import { AiOutlineHeart, AiFillHeart, AiOutlineShoppingCart } from 'react-icons/ai';
+import Like from "./list_like";
 
 
-const menu=({items})=> {
+const Menu=({items})=> {
+
 
     return(
         <div className="items">
@@ -22,7 +25,8 @@ const menu=({items})=> {
                         <article key={id} className="item">
                             <img src={img} alt={title}/>
                             <div id="enter">
-                                <AiOutlineHeart size="25px" color="#989898"/><AiOutlineShoppingCart size="28px" color="#989898"/>
+                                <Like/>
+                                <AiOutlineShoppingCart size="28px" color="#989898"/>
                             </div>
                             <div>
                                 <span>{itemState()}</span>
@@ -38,4 +42,4 @@ const menu=({items})=> {
     )
 }
 
-export default menu;
+export default Menu;
