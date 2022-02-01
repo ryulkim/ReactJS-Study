@@ -1,8 +1,8 @@
 import "../../assets/css/list.css"
+import { AiOutlineHeart, AiFillHeart, AiOutlineShoppingCart } from 'react-icons/ai';
 
 
 const menu=({items})=> {
-
 
     return(
         <div className="items">
@@ -21,6 +21,9 @@ const menu=({items})=> {
                     return(
                         <article key={id} className="item">
                             <img src={img} alt={title}/>
+                            <div id="enter">
+                                <AiOutlineHeart size="25px" color="#989898"/><AiOutlineShoppingCart size="28px" color="#989898"/>
+                            </div>
                             <div>
                                 <span>{itemState()}</span>
                                 <span className="item_title">{title}</span>

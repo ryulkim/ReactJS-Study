@@ -6,8 +6,26 @@
 }
 
 .item{
+    position: relative;
     margin: 10px;
     text-align: center;
+    overflow: hidden;
+}
+
+#enter{
+    position: absolute;
+    top:-10%;
+}
+
+.item:hover>#enter{
+    position: absolute;
+    top:40px;
+    left:0;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .item_title{
@@ -54,3 +72,4 @@ body{
 .list{
     width: 85vw;
 }
+
