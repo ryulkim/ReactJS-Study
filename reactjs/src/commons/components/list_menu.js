@@ -1,15 +1,24 @@
 import "../../assets/css/list.css"
-
-import { AiOutlineHeart, AiFillHeart, AiOutlineShoppingCart } from 'react-icons/ai';
 import Like from "./list_like";
+import {AiOutlineShoppingCart } from 'react-icons/ai';
+import React, { useState } from "react";
+import CartModal from "./modal/list_cartModal";
 
 
 const Menu=({items})=> {
+    const [cart, setCart]=useState(false);
+    const [item, setItem]=useState(null);
 
+    const onClick=(item, e)=>{
+        console.log(item, e);
+        setCart(!cart);
+        setItem(item);
+    }
 
     return(
         <div className="items">
             {
+                
                 items.map((menuItem)=>{
                     const {id, title, desc, img, price, state}=menuItem;
 
@@ -26,7 +35,7 @@ const Menu=({items})=> {
                             <img src={img} alt={title}/>
                             <div id="enter">
                                 <Like/>
-                                <AiOutlineShoppingCart size="28px" color="#989898"/>
+                                <AiOutlineShoppingCart size="28px" color="#989898" onClick={(e)=>{onClick(menuItem,e)}}/>
                             </div>
                             <div>
                                 <span>{itemState()}</span>
@@ -38,6 +47,8 @@ const Menu=({items})=> {
                     )
                 })  
             }  
+            {cart?<CartModal open={cart} close={onClick} item={item}/>:null}
+            
         </div>
     )
 }
