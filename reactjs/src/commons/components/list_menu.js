@@ -10,10 +10,11 @@ const Menu=({items})=> {
     const [item, setItem]=useState(null);
 
     const onClick=(item, e)=>{
-        console.log(item, e);
         setCart(!cart);
         setItem(item);
     }
+
+    
 
     return(
         <div className="items">
@@ -41,7 +42,7 @@ const Menu=({items})=> {
                                     <span>{itemState()}</span>
                                     <span className="item_title">{title}</span>
                                     <span className="item_desc">{desc}</span>
-                                    <span className="item_price">₩ {price}</span>
+                                    <span className="item_price">₩ {price.toLocaleString()}</span>
                                 </div>
                             </article>
                             

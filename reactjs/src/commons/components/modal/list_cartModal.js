@@ -36,7 +36,7 @@ const CartModal=({open, close, item})=>{
                                 <input id="value" value={ord.val}></input>
                                 <button onClick={plus}>+</button>
                             </div>
-                            <pri>₩{ord.pri}</pri>
+                            <pri>₩{ord.pri.toLocaleString()}</pri>
                         </div>
                     </div>
                 </main>
