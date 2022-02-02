@@ -10,7 +10,7 @@ const Like=()=>{
 
     return(
         <>
-            {like?<AiFillHeart size="25px" color="red" onClick={onClick}/>:<AiOutlineHeart size="25px" color="#989898" onClick={onClick}/>}
+            {like?<AiFillHeart className="button" size="25px" color="red" onClick={onClick}/>:<AiOutlineHeart className="button" size="25px" color="#989898" onClick={onClick}/>}
         </>
     )
 

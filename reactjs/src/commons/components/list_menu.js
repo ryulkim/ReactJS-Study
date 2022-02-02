@@ -31,19 +31,20 @@ const Menu=({items})=> {
                     }
 
                     return(
-                        <article key={id} className="item">
-                            <img src={img} alt={title}/>
-                            <div id="enter">
-                                <Like/>
-                                <AiOutlineShoppingCart size="28px" color="#989898" onClick={(e)=>{onClick(menuItem,e)}}/>
-                            </div>
-                            <div>
-                                <span>{itemState()}</span>
-                                <span className="item_title">{title}</span>
-                                <span className="item_desc">{desc}</span>
-                                <span className="item_price">₩ {price}</span>
-                            </div>
-                        </article>
+                            <article key={id} className="item button">
+                                <img src={img} alt={title}/>
+                                <div id="enter">
+                                    <Like/>
+                                    <AiOutlineShoppingCart className="button" size="28px" color="#989898" onClick={(e)=>{onClick(menuItem,e)}}/>
+                                </div>
+                                <div>
+                                    <span>{itemState()}</span>
+                                    <span className="item_title">{title}</span>
+                                    <span className="item_desc">{desc}</span>
+                                    <span className="item_price">₩ {price}</span>
+                                </div>
+                            </article>
+                            
                     )
                 })  
             }  

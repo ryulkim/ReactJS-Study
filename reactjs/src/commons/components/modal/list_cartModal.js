@@ -21,7 +21,7 @@ const CartModal=({open, close, item})=>{
             <section>
                 <header>
                     장바구니 담기
-                    <AiOutlineClose size="30px" color="gray" onClick={close}/>
+                    <AiOutlineClose className="button" size="30px" color="gray" onClick={close}/>
                 </header>
                 <main>
                     <img className="cart_img" src={img} alt={title}/>

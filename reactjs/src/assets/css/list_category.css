@@ -8,7 +8,7 @@ button{
     text-align: left;
 }
 
-button:hover{
+.category button:hover{
     color: #000;
 }
 
