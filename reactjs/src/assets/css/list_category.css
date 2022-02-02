@@ -8,7 +8,7 @@ button{
     text-align: left;
 }
 
-button:hover{
+.category button:hover{
     color: #000;
 }
 
@@ -20,3 +20,6 @@ body{
     padding-left: 0px;
 }
 
+.black{
+    color:#000;
+}

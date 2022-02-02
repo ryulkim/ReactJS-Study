@@ -7,3 +7,11 @@
 h1{
   width: 85vw;
 }
+
+button:hover{
+  cursor: pointer;
+}
+
+.button{
+  cursor: pointer;
+}

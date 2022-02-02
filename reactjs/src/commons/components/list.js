@@ -25,7 +25,7 @@ function List() {
     return(
         <div className="list">
             <h1 className="list_type">{listMenu}</h1>
-            <Lcategory category={categories} count={count} filterItems={filterItems}/>
+            <Lcategory category={categories} count={count} filterItems={filterItems} menuItem={listMenu}/>
             <LMenu items={menuItem}/>
         </div>
     )
