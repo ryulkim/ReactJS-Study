@@ -16,7 +16,7 @@ function List() {
 
     useEffect(() => {
             listMenu = cate;
-            if (cate === "전체") {
+            if (cate === null||cate==="전체") {
                 listMenu="샤워";
                 setMenuItem(data);
             }
