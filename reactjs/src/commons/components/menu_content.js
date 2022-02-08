@@ -1,6 +1,5 @@
 import "../../assets/css/menu_content.css"
 import data from "./data/data.js"
-import {Link} from "react-router-dom";
 
 const typeArr=[...new Set(data.map((item)=>item.type))];
 
