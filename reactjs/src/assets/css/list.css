@@ -6,7 +6,52 @@
 }
 
 .item{
+    position: relative;
     margin: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#enter{
+    position: absolute;
+    top:-10%;
+}
+
+.item:hover>#enter{
+    position: absolute;
+    top:40px;
+    left:0;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item_title{
+    line-height: 22px;
+    color: #333;
+    display: block;
+    font-size: 16px;
+}
+
+.item_desc{
+    color: #8f8f8f;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+
+.item_price{
+    color:#333;
+    font-size: 16px;
+    display: block;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+
+.item_state{
+    margin: 2px;
 }
 
 .list_type{
@@ -27,3 +72,4 @@ body{
 .list{
     width: 85vw;
 }
+
