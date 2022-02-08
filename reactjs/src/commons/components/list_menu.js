@@ -15,7 +15,6 @@ const Menu=({items})=> {
     }
 
     
-
     return(
         <div className="items">
             {
@@ -50,7 +49,6 @@ const Menu=({items})=> {
                 })  
             }  
             {cart?<CartModal open={cart} close={onClick} item={item}/>:null}
-            
         </div>
     )
 }

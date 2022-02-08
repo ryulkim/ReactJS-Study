@@ -1,7 +1,6 @@
 import "../../assets/css/list_category.css"
 
 function Lcategory({category, count, filterItems, menuItem}) {
-
     return(
         <div className="category">
             {category.map((type, index)=>{

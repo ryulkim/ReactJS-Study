@@ -1,8 +1,8 @@
-const list=[
+const list = [
     {
         id: 1,
         title: "13 솝 언럭키 포 더트",
-        price: 16000,
+        price: "16,000",
         img: 'https://www.lush.co.kr/data/goods/20/07/31/1000001306/1000001306_main_086.jpg',
         state: ["new"],
         type: "솝",
