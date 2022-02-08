@@ -10,7 +10,7 @@ let listMenu = "전체";
 
 function List() {
     const [menuItem, setMenuItem] = useState(data);
-
+{/* */}
     const filterItems = ({ type }) => {//{}를 하려면 파라미터와 인자명이 같아야함,{}를 안하면 query 형식으로 저장
         listMenu = type;
         if (type === "전체") {
