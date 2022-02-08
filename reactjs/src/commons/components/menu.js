@@ -7,8 +7,6 @@ class Menu extends Component {
     render() {
         return (
             <>
-
-            {/* */}
                 <div className="menu">
                     <div className="logo_inner">
                         <div id="logo"><Link to="/main"><img src="https://lush.co.kr/data/skin/front/howling/img/banner/8b07b23fdab3e3e461a6acc42bc930c3_43812.png"></img></Link></div>

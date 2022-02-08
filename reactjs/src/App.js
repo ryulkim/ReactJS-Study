@@ -11,7 +11,7 @@ function App() {
         <Menu></Menu>
           <Routes>
             <Route path="/main" exact element={<Main/>}></Route>
-            <Route path="/list" exact element={<List/>}></Route>
+            <Route path="/list/" exact element={<List/>}></Route>
           </Routes>
         </BrowserRouter>
 

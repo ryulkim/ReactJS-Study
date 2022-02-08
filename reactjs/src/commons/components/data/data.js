@@ -3,7 +3,7 @@ const list = [
         id: 1,
         title: "13 솝 언럭키 포 더트",
         price: "16,000",
-        img: 'https://www.lush.co.kr/data/goods/20/07/31/1000001306/1000001306_main_086.jpg',
+        img: 'https://shop-phinf.pstatic.net/20210104_169/1609745311981FB59x_JPEG/10881210491803735_658719688.jpg',
         state: ["new"],
         type: "솝",
         desc: "#솝 #피부를지켜주는오레가노"

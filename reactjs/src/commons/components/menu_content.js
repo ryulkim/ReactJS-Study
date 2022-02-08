@@ -1,5 +1,6 @@
 import "../../assets/css/menu_content.css"
 import data from "./data/data.js"
+import {Link, Routes} from "react-router-dom";
 
 const typeArr=[...new Set(data.map((item)=>item.type))];
 
@@ -8,13 +9,15 @@ function MenuContent(){
     return (
     <div className="menu_content">
         <ul>
-            <li>샤워
+            <li><Link to="/list/shower">샤워</Link>
                 <ul className="shower">
-                    {typeArr.map((type, index) => (
-                        <li key={index}>
-                            {type}
-                        </li>
-                    ))}
+                    {typeArr.map((type, index) =>{
+                        const Etype=escape(type);
+                        return (
+                            <li key={index}><a onClick={()=>{window.location.replace(`/list/?cate=${Etype}`)}}>{type}</a></li>
+                            
+                        )})
+                    } 
                 </ul>
             </li>
             <li>보디
