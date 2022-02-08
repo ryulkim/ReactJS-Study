@@ -6,14 +6,14 @@ import { useState } from "react"
 const speCategories = [...new Set(data.map((item) => item.type))];//...: spread operator
 const categories = ["전체", ...speCategories];
 const count = [categories.length, ...speCategories.map((item) => data.reduce((cnt, element) => cnt + (item === element.type), 0))];
-let listMenu = "전체";
+let listMenu="샤워";
 
 function List() {
     const [menuItem, setMenuItem] = useState(data);
-{/* */}
     const filterItems = ({ type }) => {//{}를 하려면 파라미터와 인자명이 같아야함,{}를 안하면 query 형식으로 저장
         listMenu = type;
         if (type === "전체") {
+            listMenu="샤워";
             setMenuItem(data);
         }
         else {

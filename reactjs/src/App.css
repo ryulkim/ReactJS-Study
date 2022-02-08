@@ -2,9 +2,11 @@
     margin: 0px;
     padding: 0px;
 }
+
 .menu{
-    width: 15%;
-    justify-content:space-around;
+  display: flex;
+  width: 15%;
+  justify-content:space-around;
 }
 
 h1{
@@ -17,4 +19,9 @@ button:hover{
 
 .button{
   cursor: pointer;
+}
+
+
+body { 
+  padding-top: 100px;
 }
