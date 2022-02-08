@@ -35,5 +35,5 @@ function Slider() {
         </div>
     );
 }
-
+// ㅇㅇㅇㅇㅇ
 export default Slider;
