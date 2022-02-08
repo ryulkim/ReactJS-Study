@@ -1,9 +1,9 @@
 import "../../assets/css/list_category.css"
 
-function Lcategory({category, count, filterItems}) {
-    return(
+function Lcategory({ category, count, filterItems }) {
+    return (
         <div className="category">
-            {category.map((type, index)=><button key={index} onClick={()=>filterItems({type})}>{type}({count[index]})</button>)}
+            {category.map((type, index) => <button key={index} onClick={() => filterItems({ type })}>{type}({count[index]})</button>)}
         </div>
     )
 }
