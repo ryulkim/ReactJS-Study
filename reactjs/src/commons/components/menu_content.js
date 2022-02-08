@@ -14,7 +14,7 @@ function MenuContent(){
                     {typeArr.map((type, index) =>{
                         const Etype=escape(type);
                         return (
-                            <li key={index}><a onClick={()=>{window.location.replace(`/list/?cate=${Etype}`)}}>{type}</a></li>
+                            <li key={index} onClick={()=>{window.location.replace(`/list/?cate=${Etype}`)}}>{type}</li>
                             
                         )})
                     } 
