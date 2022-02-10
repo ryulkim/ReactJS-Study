@@ -1,3 +1,4 @@
+import "../../assets/css/list.css"
 import data from "./data/data.js"
 import LMenu from './list_menu'
 import Lcategory from "./list_category.js";
