@@ -1,0 +1,19 @@
+{
+  "name": "reactjs-study",
+  "version": "1.0.0",
+  "description": "lush 사이트 클론코딩",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryulkim/ReactJS-Study.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryulkim/ReactJS-Study/issues"
+  },
+  "homepage": "https://github.com/ryulkim/ReactJS-Study#readme"
+}

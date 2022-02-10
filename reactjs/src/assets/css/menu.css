@@ -51,6 +51,12 @@ a {
     text-decoration: none;
 }
 
+#product {
+    cursor: pointer;
+    width: 80px;
+    height: 50px;
+}
+
 #menu1:hover .menu_content {
     display: block;
 }
