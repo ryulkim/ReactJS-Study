@@ -15,15 +15,15 @@ function List() {
     const [menuItem, setMenuItem] = useState(data);
 
     useEffect(() => {
-            listMenu = cate;
-            if (cate === null||cate==="전체") {
-                listMenu="샤워";
-                setMenuItem(data);
-            }
-            else {
-                const newMenuItem = data.filter((item) => item.type === cate);
-                setMenuItem(newMenuItem);
-            }
+        listMenu = cate;
+        if (cate === null||cate==="전체") {
+            listMenu="샤워";
+            setMenuItem(data);
+        }
+        else {
+            const newMenuItem = data.filter((item) => item.type === cate);
+            setMenuItem(newMenuItem);
+        }
     }, []);
 
     return (
