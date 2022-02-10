@@ -24,11 +24,11 @@
     font-weight: 500;
 }
 
-.menu_content > ul > li > ul > li > a {
+.menu_content > ul > li > ul > li {
     color: #9b9b9b;
 }
 
-.menu_content > ul > li > ul > li > a:hover {
+.menu_content > ul > li > ul > li:hover {
     color: #fff;
 }
 
