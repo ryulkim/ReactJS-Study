@@ -8,13 +8,15 @@ function MenuContent(){
     return (
     <div className="menu_content">
         <ul>
-            <li>샤워
+            <li  id="menu_cate"><li onClick={()=>{const Etype=escape("전체");window.location.replace(`/list/?cate=${Etype}`)}}>샤워</li>
                 <ul className="shower">
-                    {typeArr.map((type, index) => (
-                        <li key={index}>
-                            {type}
-                        </li>
-                    ))}
+                    {typeArr.map((type, index) =>{
+                        const Etype=escape(type);
+                        return (
+                            <li key={index} onClick={()=>{window.location.replace(`/list/?cate=${Etype}`)}}>{type}</li>
+                            
+                        )})
+                    } 
                 </ul>
             </li>
             <li>보디

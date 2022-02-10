@@ -7,15 +7,14 @@ class Menu extends Component {
     render() {
         return (
             <>
-
-            {/* */}
                 <div className="menu">
                     <div className="logo_inner">
-                        <div id="logo"><Link to="/main"><img src="https://lush.co.kr/data/skin/front/howling/img/banner/8b07b23fdab3e3e461a6acc42bc930c3_43812.png"></img></Link></div>
+                        <div id="logo"><Link to="/"><img src="https://lush.co.kr/data/skin/front/howling/img/banner/8b07b23fdab3e3e461a6acc42bc930c3_43812.png"></img></Link></div>
                     </div>
                     <div className="menu_inner">
                         <ul>
-                            <li id="menu1"><Link to="/list">제품</Link>
+                            <li id="menu1">
+                                <div id="product" onClick={()=>{const Etype=escape("전체");window.location.replace(`/list/?cate=${Etype}`)}}>제품</div>
                             <MenuContent></MenuContent>
                             </li>
                             <li>러쉬 소개</li>
