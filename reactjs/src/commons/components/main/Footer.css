@@ -1,0 +1,37 @@
+.footer-menu {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 110px;
+  padding-left: 150px;
+}
+
+.upper_menu>ul>li {
+  float: left;
+  list-style-type: none;
+  color: white;
+  margin-left: 30px;
+}
+
+.upper_menu>.special-yellow {
+  color: yellow;
+}
+
+.left_menu>ul>li {
+  border-left: 30px;
+  list-style-type: none;
+  color: white;
+  margin-top: 15px;
+}
+
+.email {
+  text-decoration: underline;
+}
