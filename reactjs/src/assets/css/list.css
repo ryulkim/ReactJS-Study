@@ -75,3 +75,8 @@ body{
 article>img{
     width: 300px;
 }
+
+#list{
+    display: flex;
+    justify-content: center;
+}
